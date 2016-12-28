@@ -9,6 +9,28 @@ input[type="text"] {
   float: left;
   margin-left: 10px;
 }
+
+.search-result-list {
+  list-style: none;
+  display: block;
+  margin: 0px;
+  padding: 0px;
+  width: 550px;
+}
+
+.search-result-list li {
+  margin-top: 5px;
+  text-align: left;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 5px;
+}
+
+.search-result-list li:nth-child(even) {
+  background-color: #F8F9F9;
+}
+
 .loader {
   display: none;
   margin-left: 5px;
@@ -24,6 +46,7 @@ input[type="text"] {
   -webkit-animation: load8 1.1s infinite linear;
   animation: load8 1.1s infinite linear;
 }
+
 .loader,
 .loader:after {
   border-radius: 50%;

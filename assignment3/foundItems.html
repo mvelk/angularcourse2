@@ -1,0 +1,8 @@
+<ul class="search-result-list">
+  <li ng-repeat="item in found.foundItems">
+    {{item.name}}
+    <span ng-if="item.price_large" style="border-radius: 3px; background-color: #148F77; color: white; padding: 2px 5px; margin-left: 5px; ">{{item.price_large | currency }}</span>
+    <span ng-if="item.price_small" style="border-radius: 3px; background-color: #117864; color: white; padding: 2px 5px; margin-left: 5px; ">{{item.price_small | currency }}</span>
+    <button class="btn btn-xs" style="margin-left: 5px;" ng-click="onRemove({index: $index})">Remove Item</button>
+  </li>
+</ul>
