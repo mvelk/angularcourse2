@@ -1,0 +1,15 @@
+<h3>{{$ctrl.items.category.name}}</h3>
+<table class="menu-items">
+  <tr style="text-align: left;">
+    <th>Name</th>
+    <th>Description</th>
+    <th>Small</th>
+    <th>Large</th>
+  </tr>
+  <tr ng-repeat="item in $ctrl.items.menuItems">
+    <td>{{item.name}}</td>
+    <td>{{item.description}}</td>
+    <td>{{item.price_small | currency}}</td>
+    <td>{{item.price_large | currency}}</td>
+  </tr>
+</table>
